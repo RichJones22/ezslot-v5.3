@@ -917,7 +917,7 @@ eval("/* =======================================================================
 /* 141 */
 /***/ function(module, exports) {
 
-eval("Vue.component('home', {\n    props: ['user'],\n\n    mounted: function mounted() {\n        //\n    }\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL3Jlc291cmNlcy9hc3NldHMvanMvY29tcG9uZW50cy9ob21lLmpzP2MyMmIiXSwic291cmNlc0NvbnRlbnQiOlsiVnVlLmNvbXBvbmVudCgnaG9tZScsIHtcbiAgICBwcm9wczogWyd1c2VyJ10sXG5cbiAgICBtb3VudGVkKCkge1xuICAgICAgICAvL1xuICAgIH1cbn0pO1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHJlc291cmNlcy9hc3NldHMvanMvY29tcG9uZW50cy9ob21lLmpzIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==");
+eval("Vue.component('home', {\n    props: ['user'],\n\n    mounted: function mounted() {\n        //\n    },\n    computed: {\n        upperName: function upperName() {\n            return this.user.name.toUpperCase();\n        }\n    }\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL3Jlc291cmNlcy9hc3NldHMvanMvY29tcG9uZW50cy9ob21lLmpzP2MyMmIiXSwic291cmNlc0NvbnRlbnQiOlsiVnVlLmNvbXBvbmVudCgnaG9tZScsIHtcbiAgICBwcm9wczogWyd1c2VyJ10sXG5cbiAgICBtb3VudGVkKCkge1xuICAgICAgICAvL1xuICAgIH0sXG4gICAgY29tcHV0ZWQ6IHtcbiAgICAgICAgdXBwZXJOYW1lKCkge1xuICAgICAgICAgICAgcmV0dXJuIHRoaXMudXNlci5uYW1lLnRvVXBwZXJDYXNlKCk7XG4gICAgICAgIH1cbiAgICB9XG59KTtcblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyByZXNvdXJjZXMvYXNzZXRzL2pzL2NvbXBvbmVudHMvaG9tZS5qcyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9");
 
 /***/ },
 /* 142 */
