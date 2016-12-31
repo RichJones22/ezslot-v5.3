@@ -16,6 +16,7 @@ require('laravel-elixir-vue-2');
 
 elixir(function(mix) {
     mix.less('app.less')
+        .sass('cover.css')
         .webpack('app.js', null, null, {
             resolve: {
                 modules: [

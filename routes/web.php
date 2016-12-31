@@ -17,6 +17,10 @@ Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
 
+Route::get('/cover', function() {
+    return view('cover');
+});
+
 
 Route::get('/metrics', function() {
    for($i=0;$i<100;$i++)
