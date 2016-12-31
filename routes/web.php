@@ -21,6 +21,10 @@ Route::get('/cover', function() {
     return view('cover');
 });
 
+Route::get('/splash', function() {
+    return view('splash');
+});
+
 
 Route::get('/metrics', function() {
    for($i=0;$i<100;$i++)

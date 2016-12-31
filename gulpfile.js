@@ -17,6 +17,7 @@ require('laravel-elixir-vue-2');
 elixir(function(mix) {
     mix.less('app.less')
         .sass('cover.css')
+        .sass('splash.css')
         .webpack('app.js', null, null, {
             resolve: {
                 modules: [
@@ -26,5 +27,11 @@ elixir(function(mix) {
             }
         })
         .copy('node_modules/sweetalert/dist/sweetalert.min.js', 'public/js/sweetalert.min.js')
-        .copy('node_modules/sweetalert/dist/sweetalert.css', 'public/css/sweetalert.css');
+        .copy('node_modules/sweetalert/dist/sweetalert.css', 'public/css/sweetalert.css')
+        .copy('resources/startbootstrap-freelancer/vendor/bootstrap/css/bootstrap.min.css', 'public/css/bootstrap.min.css')
+        .copy('resources/startbootstrap-freelancer/vendor/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css')
+        .copy('resources/startbootstrap-freelancer/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js')
+        .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')
+        .copy('resources/startbootstrap-freelancer/js/freelancer.min.js', 'public/js/freelancer.min.js')
+        .copy('resources/startbootstrap-freelancer/js/jqBootstrapValidation.js', 'public/js/jqBootstrapValidation.js');
 });
