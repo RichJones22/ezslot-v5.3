@@ -58,10 +58,10 @@
                         <a href="#contact">Alerts</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Login</a>
+                        <a href="/login">Login</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Register</a>
+                        <a href="/register">Register</a>
                     </li>
                 </ul>
             </div>

@@ -7,3 +7,6 @@ Homestead.json
 Homestead.yaml
 .env
 app.js
+.php_cs.cache
+.phpstorm.meta.php
+_ide_helper.php
