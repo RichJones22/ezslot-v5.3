@@ -1,9 +1,9 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace App\Providers;
 
-use Laravel\Spark\Spark;
 use Laravel\Spark\Providers\AppServiceProvider as ServiceProvider;
+use Laravel\Spark\Spark;
 
 class SparkServiceProvider extends ServiceProvider
 {
@@ -13,11 +13,11 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $details = [
-        'vendor' => 'Your Company',
-        'product' => 'Your Product',
-        'street' => 'PO Box 111',
-        'location' => 'Your Town, NY 12345',
-        'phone' => '555-555-5555',
+        'vendor' => 'Premise Software Solutions, Inc.',
+        'product' => 'ezSlot',
+        'street' => '13400 Montview Drive',
+        'location' => 'Austin, TX 78732',
+        'phone' => '408-315-5978',
     ];
 
     /**
@@ -25,7 +25,7 @@ class SparkServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $sendSupportEmailsTo = null;
+    protected $sendSupportEmailsTo = 'jones_rich@yahoo.com';
 
     /**
      * All of the application developer e-mail addresses.
@@ -33,7 +33,7 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $developers = [
-        'jones_rich@yahoo.com'
+        'jones_rich@yahoo.com',
     ];
 
     /**
@@ -41,12 +41,10 @@ class SparkServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $usesApi = true;
+    protected $usesApi = false;
 
     /**
      * Finish configuring Spark for the application.
-     *
-     * @return void
      */
     public function booted()
     {
@@ -54,13 +52,13 @@ class SparkServiceProvider extends ServiceProvider
 
         Spark::freePlan()
             ->features([
-                'First', 'Second', 'Third'
+                'First', 'Second', 'Third',
             ]);
 
         Spark::plan('Basic', 'spark01-basic')
             ->price(10)
             ->features([
-                'First', 'Second', 'Third'
+                'First', 'Second', 'Third',
             ]);
     }
 }

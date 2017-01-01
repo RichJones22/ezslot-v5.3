@@ -6,9 +6,9 @@ Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
 
-Route::get('/cover', function() {
-    return view('cover');
-});
+//Route::get('/cover', function() {
+//    return view('cover');
+//});
 
 Route::get('/splash', function() {
     return view('splash');

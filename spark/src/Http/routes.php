@@ -1,6 +1,10 @@
 <?php
 
-$router->group(['middleware' => 'web'], function ($router) {
+use Laravel\Spark\Spark;
+use Illuminate\Routing\Router;
+
+/** @var Router $router */
+$router->group(['middleware' => 'web'], function (Router $router) {
     $teamString = Spark::teamString();
 
     $pluralTeamString = str_plural(Spark::teamString());
