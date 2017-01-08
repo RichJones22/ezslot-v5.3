@@ -95,6 +95,13 @@
                 </div>
             </div>
             <div class="row">
+                {{--<div class="col-md-2">--}}
+                    {{--<select-symbol></select-symbol>--}}
+                {{--</div>--}}
+                {{--<div class="col-md-10">--}}
+                    {{--<vue-closed-trades></vue-closed-trades>--}}
+                {{--</div>--}}
+
                 <table class="table table-inverse table-responsive tbl-result-lh">
                     <thead>
                     <tr>

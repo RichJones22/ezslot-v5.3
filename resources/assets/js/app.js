@@ -21,3 +21,13 @@ require('./components/bootstrap');
 var app = new Vue({
     mixins: [require('spark')]
 });
+
+
+// // app specific components
+// window.Event = new Vue();
+// require('./components/app/bootstrap');
+//
+// // const app = new Vue({
+// new Vue({
+//     el: 'body',
+// });
