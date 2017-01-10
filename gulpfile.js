@@ -17,10 +17,12 @@ require('laravel-elixir-vue-2');
 elixir(function(mix) {
     mix.less('app.less')
         .sass('splash.css')
+        .webpack('ezSlot.js')
         .webpack('app.js', null, null, {
             resolve: {
                 modules: [
                     path.resolve(__dirname, 'vendor/laravel/spark/resources/assets/js'),
+                    // path.resolve(__dirname, 'spark/resources/assets/js'),
                     'node_modules'
                 ]
             }
@@ -30,7 +32,7 @@ elixir(function(mix) {
         .copy('resources/startbootstrap-freelancer/vendor/bootstrap/css/bootstrap.min.css', 'public/css/bootstrap.min.css')
         .copy('resources/startbootstrap-freelancer/vendor/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css')
         .copy('resources/startbootstrap-freelancer/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js')
-        .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')
+        // .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')
         .copy('resources/startbootstrap-freelancer/js/freelancer.min.js', 'public/js/freelancer.min.js')
-        .copy('resources/startbootstrap-freelancer/js/jqBootstrapValidation.js', 'public/js/jqBootstrapValidation.js');
+        // .copy('resources/startbootstrap-freelancer/js/jqBootstrapValidation.js', 'public/js/jqBootstrapValidation.js');
 });
