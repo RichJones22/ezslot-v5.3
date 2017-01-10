@@ -31,6 +31,7 @@ elixir(function(mix) {
         .copy('node_modules/sweetalert/dist/sweetalert.min.js', 'public/js/sweetalert.min.js')
         .copy('node_modules/sweetalert/dist/sweetalert.css', 'public/css/sweetalert.css')
         .copy('resources/startbootstrap-freelancer/vendor/bootstrap/css/bootstrap.min.css', 'public/css/bootstrap.min.css')
+        .copy('resources/startbootstrap-freelancer/vendor/bootstrap/js/bootstrap.min.js', 'public/js/bootstrap.min.js')
         .copy('resources/startbootstrap-freelancer/vendor/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css')
         .copy('resources/startbootstrap-freelancer/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js')
         // .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')

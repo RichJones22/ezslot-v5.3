@@ -303,7 +303,7 @@
     <script src="js/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -313,7 +313,7 @@
     {{--<script src="js/contact_me.js"></script>--}}
 
     <!-- Theme JavaScript -->
-    {{--<script src="js/freelancer.min.js"></script>--}}
+    <script src="js/freelancer.min.js"></script>
 
     <!-- app js-->
     <script src="js/ezSlot.js"></script>
