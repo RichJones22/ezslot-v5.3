@@ -313,7 +313,7 @@
     {{--<script src="js/contact_me.js"></script>--}}
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    {{--<script src="js/freelancer.min.js"></script>--}}
 
     <!-- app js-->
     <script src="js/ezSlot.js"></script>
