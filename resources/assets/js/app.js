@@ -1,4 +1,7 @@
 
+
+
+
 /*
  |--------------------------------------------------------------------------
  | Laravel Spark Bootstrap
@@ -23,11 +26,4 @@ var app = new Vue({
 });
 
 
-// // app specific components
-// window.Event = new Vue();
-// require('./components/app/bootstrap');
-//
-// // const app = new Vue({
-// new Vue({
-//     el: 'body',
-// });
+
