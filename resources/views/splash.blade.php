@@ -95,6 +95,13 @@
                 </div>
             </div>
             <div class="row">
+                {{--<div class="col-md-2">--}}
+                    {{--<select-symbol></select-symbol>--}}
+                {{--</div>--}}
+                {{--<div class="col-md-10">--}}
+                    {{--<vue-closed-trades></vue-closed-trades>--}}
+                {{--</div>--}}
+
                 <table class="table table-inverse table-responsive tbl-result-lh">
                     <thead>
                     <tr>
@@ -296,7 +303,7 @@
     <script src="js/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
