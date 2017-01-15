@@ -20,7 +20,7 @@ class TransactionAggregateS
      */
     private $aggregateR;
     /**
-     * @var SymbolS
+     * @var SymbolsS
      */
     private $symbolS;
 
@@ -28,11 +28,11 @@ class TransactionAggregateS
      * TransactionAggregateS constructor.
      *
      * @param TransactionAggregateR $aggregateR
-     * @param SymbolS               $symbolService
+     * @param SymbolsS              $symbolService
      */
     public function __construct(
         TransactionAggregateR $aggregateR,
-        SymbolS $symbolService
+        SymbolsS $symbolService
     ) {
         $this->aggregateR = $aggregateR;
         $this->symbolS = $symbolService;
