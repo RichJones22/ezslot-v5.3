@@ -11,8 +11,12 @@
 |
 */
 
-Route::group([
-    'middleware' => 'auth:api'
-], function () {
-    //
-});
+//Route::group([
+//    'middleware' => 'auth:api'
+//], function () {
+//    //a
+//});
+
+Route::get('/closedSymbols', 'TransactionController@getSymbolsThatClosedForPeriod');
+
+
