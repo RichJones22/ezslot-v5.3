@@ -9,7 +9,7 @@
             </tr>
             </thead>
         </table>
-        <div style="max-height: 800px; overflow: auto;">
+        <div>
             <table class="table table-inverse" style="margin-bottom: 0;">
                 <tbody v-for="(skill, index) in skills">
                 <tr>

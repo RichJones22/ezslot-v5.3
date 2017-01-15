@@ -58,7 +58,7 @@ class TransactionAggregateS
      */
     public function getAllPutTrades(): Collection
     {
-        $monthsBack = CurrentDateTime::new()->daysBack(180);
+        $monthsBack = CurrentDateTime::new()->daysBack(360);
 
         $result = new Collection();
 
