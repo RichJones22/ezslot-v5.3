@@ -1,5 +1,5 @@
-var elixir = require('laravel-elixir');
-var path = require('path');
+const elixir = require('laravel-elixir');
+const path = require('path');
 
 require('laravel-elixir-vue-2');
 // require('laravel-elixir-vue-loader');
@@ -18,7 +18,6 @@ require('laravel-elixir-vue-2');
 elixir(function(mix) {
     mix.less('app.less')
         .sass('splash.css')
-        .webpack('ezSlot.js')
         .webpack('app.js', null, null, {
             resolve: {
                 modules: [
@@ -37,4 +36,5 @@ elixir(function(mix) {
         // .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')
         .copy('resources/startbootstrap-freelancer/js/freelancer.min.js', 'public/js/freelancer.min.js')
         // .copy('resources/startbootstrap-freelancer/js/jqBootstrapValidation.js', 'public/js/jqBootstrapValidation.js');
+        .webpack('ezSlot.js')
 });
