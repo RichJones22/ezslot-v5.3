@@ -51,6 +51,15 @@ class TransactionController extends Controller
         return $this->convertToJsonableType($CollectionAggregateE);
     }
 
+    public function testGetSymbolsThatClosedForPeriod()
+    {
+        $CollectionAggregateE = $this
+            ->transactionAggregateS
+            ->getAllPutTrades();
+
+        return 'success';
+    }
+
     /**
      * @return array
      */

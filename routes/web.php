@@ -28,3 +28,14 @@ Route::get('/metrics', function() {
        ]);
    }
 });
+
+
+// testing routes; used to view queries.
+Route::group(['prefix' => 'testing'], function () {
+
+    if (app()->environment() == 'local') {
+        Route::get('GetSymbolsThatClosedForPeriod', 'TransactionController@testGetSymbolsThatClosedForPeriod');
+    } else {
+        return view('splash');
+    }
+});
