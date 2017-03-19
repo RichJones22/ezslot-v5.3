@@ -82,8 +82,6 @@ class TransactionAggregateR
             ->where('security_type', 'OPTION')
             ->where('close_date', '>', $this->fromDate)
             ->orderBy('close_date', 'desc')
-//            ->orderBy('option_side', 'asc')
-//            ->orderBy('expiration', 'asc')
             ->get();
 
         // derive TransactionAggregateE collection
@@ -140,6 +138,7 @@ class TransactionAggregateR
             ->where('underlier_symbol', $aggregateE->getUnderlierSymbol())
             ->where('option_side', $aggregateE->getOptionSide())
             ->where('security_type', 'OPTION')
+            ->whereIn('trade_type', $this->tradeWhere)
             ->get();
 
         return $counts;
@@ -174,7 +173,6 @@ class TransactionAggregateR
         $counts = DB::table('options_house_transaction')
             ->select(DB::raw('count(*) as count'))
             ->where('symbol', $aggregateE->getSymbol())
-//                ->where('close_date', $aggregateE->getCloseDate())
             ->where('security_type', 'OPTION')
             ->whereIn('trade_type', $this->tradeWhere)
             ->get();
@@ -210,7 +208,7 @@ class TransactionAggregateR
 
         foreach ($transactions as $transaction) {
             /** @var TransactionAggregateE $transactionAggregate */
-            $transactionAggregate = new $this->TransactionAggregateE();
+            $transactionAggregate = new $this->TransactionAggregateE;
 
             foreach ($transaction as $key => $value) {
                 $method = 'set'.ucfirst(Str::camel($key));

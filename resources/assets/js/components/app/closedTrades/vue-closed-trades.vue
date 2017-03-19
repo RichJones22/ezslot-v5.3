@@ -46,7 +46,7 @@
     export default {
         data(){
             return{
-                skills: {}
+                skills: []
             }
         },
         created() {
@@ -57,7 +57,19 @@
             axios.get('/api/closedSymbols')
                 .then(function (response) {
                     self.skills = response.data;
-                });
+            });
+
+//            $.ajax({
+//                type: "GET",
+//                url: '/api/closedSymbols',
+//                contentType: "application/json; charset=utf8",
+//                dataType: "json",
+//                success: function (response) {
+//                    console.log(response);
+//                    self.skills = response;
+//                }
+//            });
+
         },
 
         computed: {
