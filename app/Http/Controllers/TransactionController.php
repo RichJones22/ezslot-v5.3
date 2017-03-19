@@ -65,8 +65,7 @@ class TransactionController extends Controller
      */
     public function getSymbolsThatClosedForPeriod()
     {
-        $data = Cache::get('getAllPutTrades');
-        if ($data) {
+        if ($data = Cache::get('getAllPutTrades')) {
             return json_decode($data);
         }
 

@@ -208,7 +208,7 @@ class TransactionAggregateR
 
         foreach ($transactions as $transaction) {
             /** @var TransactionAggregateE $transactionAggregate */
-            $transactionAggregate = new $this->TransactionAggregateE();
+            $transactionAggregate = new $this->TransactionAggregateE;
 
             foreach ($transaction as $key => $value) {
                 $method = 'set'.ucfirst(Str::camel($key));
