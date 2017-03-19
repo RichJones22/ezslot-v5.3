@@ -39,6 +39,14 @@
         ]
     },
     "scripts": {
+        "app_setup": [
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
+            "php artisan cache:clear",
+            "php artisan view:clear",
+            "php artisan optimize",
+            "composer dump-autoload -o"
+        ],
         "post-root-package-install": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -47,15 +55,11 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta",
-            "php artisan optimize"
+            "@app_setup"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta",
-            "php artisan optimize"
+            "@app_setup"
         ]
     },
     "config": {
