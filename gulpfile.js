@@ -33,6 +33,7 @@ elixir(function(mix) {
         .copy('resources/startbootstrap-freelancer/vendor/bootstrap/js/bootstrap.min.js', 'public/js/bootstrap.min.js')
         .copy('resources/startbootstrap-freelancer/vendor/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css')
         .copy('resources/startbootstrap-freelancer/vendor/jquery/jquery.min.js', 'public/js/jquery.min.js')
+        .copy('resources/jquery/jquery-dataTables.min.js', 'public/js/jquery-dataTables.min.js')
         // .copy('resources/startbootstrap-freelancer/js/contact_me.js', 'public/js/contact_me.js')
         .copy('resources/startbootstrap-freelancer/js/freelancer.min.js', 'public/js/freelancer.min.js')
         // .copy('resources/startbootstrap-freelancer/js/jqBootstrapValidation.js', 'public/js/jqBootstrapValidation.js');
